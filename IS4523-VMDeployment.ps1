@@ -26,6 +26,9 @@ function Install-Software() {
         # Installing ShadowCopyView
         choco install shadowcopyview -y
 
+        #Installing WinPrefetchView
+        choco install winprefetchview -y
+
         # Installing Zimmerman Tools
         mkdir "C:\$name\Tools\ZimmermanTools"
         Invoke-WebRequest $zimmermantools -OutFile C:\Windows\Temp\ztools.zip
